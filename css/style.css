@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: poppins;
+}
+
+
+
+/* main css start  */
+
+.line-one{
+	position: fixed;
+	width: 15px;
+	height: 100vh;
+	background-color: #ff3131;
+	left: 23%;
+}
+.line-two{
+	position:fixed;
+	width: 25px;
+	height: 100vh;
+	background: #183d79;
+}
+nav{
+	z-index: 2;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 5px 0;
+}
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 270px;
+}
+ul li {
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+
+a:hover{
+	text-decoration: none;
+}
+nav ul li a {
+	color: #000;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+}
+nav ul li a::after{
+	content: "";
+	width: 0;
+	height: 3px;
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #ff3131;
+	transition: width 0.4s;
+	
+}
+nav ul li a:hover::after{
+	width: 100%;
+}
+
+.logo {
+    position: fixed;
+    left: 120px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.search {
+    position: fixed;
+    right: 160px;
+}
+.menu {
+    position: fixed;
+    right: 100px;
+}
+.img img {
+    position: relative;
+    width: 450px;
+    left: -18%;
+    top: 70px;
+}
+.title {
+    position: fixed;
+    position: absolute;
+    left: 43%;
+    top: 276px;
+    line-height: 0.5;
+    font-size: 100px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -14px;
+}
+
+.title p {
+	font-size: 25px;
+	font-weight: 300;
+	color: grey;
+	text-transform: uppercase;
+	left: 150px;
+	letter-spacing: 10px;
+}
+
+.btn a {
+    position: relative;
+    text-decoration: none;
+    bottom: 100px;
+    text-transform: uppercase;
+    background-color: #ff3131;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: 0.45s;
+    right: -380%;
+}
+.btn a:hover {
+    background: #000;
+    color: #fff;
+}
+.year {
+    font-weight: 700;
+    position: fixed;
+    left: 110px;
+    top: 556px;
+    padding: 10px 30px;
+}
+.media ul {
+	position: fixed;
+	right: 20px;
+	top: 63%;
+	padding: 10px 10px;
+}
+
+.media ul li{
+	margin:24px 0;
+	transition: 0.3s;
+	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	padding: 10px;
+	text-align: center;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	transition: 0.45s;
+}
+.media ul li i{
+	font-size: 14px;
+}
+.media ul li:hover{
+	background-color: #000;
+	color: #fff;
+	transform: scale(1.5);
+}
+/* main css end */
+
+
+
+
+
